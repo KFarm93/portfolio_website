@@ -1,0 +1,87 @@
+
+body {
+  background: linear-gradient(to bottom right, #001E33, #010E16);
+}
+
+.navbar h2 {
+  font-family: "Droid Sans Mono", Helvetica, sans-serif;
+  margin-right: 50%;
+  float: left;
+  color: #0FABD3;
+  border: 1px ridge #0FABD3;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.navbar ul {
+  font-family: Helvetica, sans-serif;
+  float: left;
+  list-style: none;
+  color: #0FABD3;
+  margin-top: 30px;
+  border: 1px ridge #0FABD3;
+  border-radius: 5px;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 1.2em;
+  padding-right: 20px;
+}
+
+.navbar a:link, a:visited {
+  color: #0FABD3;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  border: 2px ridge #0FABD3;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.navbar a:active {
+  color: #026D94;
+  text-decoration: none;
+
+}
+
+
+.profilepic img {
+  border: 3px ridge #0FABD3;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.profilepic p {
+  border: 2px ridge #0FABD3;
+  border-radius: 5px;
+  font-family: "Droid Sans Mono", Helvetica, sans-serif;
+  color: #0FABD3;
+  padding: 5px;
+}
+
+.space {
+  border: 1px ridge #0FABD3;
+  border-radius: 5px;
+  padding: 50px 0px 50px 0px;
+}
+
+.space p {
+  font-family: "Droid Sans Mono", Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #0FABD3;
+}
+
+.about {
+  border: 1px ridge #0FABD3;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.about p {
+  font-family: "Droid Sans Mono", Helvetica, sans-serif;
+  color: #0FABD3;
+}
