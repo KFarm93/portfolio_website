@@ -1,0 +1,109 @@
+
+body {
+  background: #5C97BF;
+}
+
+.navButtons {
+  width: 80px;
+  height: 80px;
+}
+
+.darkBlueBox {
+  background-color: #1F3A93;
+}
+
+.navbar {
+  background-color: #5C97BF;
+  margin-bottom: 0;
+  box-shadow: 0 0 50px 0 black;
+}
+
+.navbar h1 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 6em;
+  margin-right: 35%;
+  margin-left: 2%;
+  margin-top: 1%;
+  float: left;
+  color: #102542;
+  border-radius: 5px;
+}
+
+.navbar ul {
+  font-family: "Lato", Helvetica, sans-serif;
+  float: left;
+  list-style: none;
+  color: #102542;
+  margin-top: 20px;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 1.4em;
+  padding-right: 20px;
+}
+
+.navbar a:link, a:visited {
+  color: #102542;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  padding: 1px;
+}
+
+.navbar a:active {
+  color: #026D94;
+  text-decoration: none;
+}
+
+.profilepic p {
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #102542;
+  padding: 5px;
+}
+
+.parallax {
+  background-image: url("images/storm.jpg");
+  height: 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quote {
+  padding: 50px;
+  margin: 9% 17%;
+  box-shadow: 0 0 50px 0 black;
+  opacity: 0.9;
+}
+
+.quote p {
+  font-family: "Cookie", Helvetica, sans-serif;
+  font-size: 4.2em;
+  text-align: center;
+  color: #E9D460;
+}
+
+#quoteAuthor {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 1.4em;
+  float: right;
+  margin-top: 3%;
+  color: #E9D460;
+}
+
+.about p {
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #102542;
+  margin-top: 1%;
+}
+
+.about img {
+  float: left;
+  margin-right: 2%;
+}
+
+.darkBlueText {
+  color: #102542;
+}
