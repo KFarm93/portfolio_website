@@ -1,50 +1,47 @@
 
 body {
-  background: #5C97BF;
+  background-color: #2D7DD2;
+  color: black;
 }
 
 .navButtons {
-  width: 80px;
-  height: 80px;
-}
-
-.darkBlueBox {
-  background-color: #1F3A93;
+  display: flex;
+  margin-top: 5%;
 }
 
 .navbar {
-  background-color: #5C97BF;
-  margin-bottom: 0;
-  box-shadow: 0 0 50px 0 black;
+  background-color: #F45D01;
+  margin-bottom: 50px;
+  height: 20%;
+  box-shadow: 4px 5px 70px 0px rgba(28,28,28,1);
 }
 
 .navbar h1 {
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "Komika Axis", Helvetica, sans-serif;
   font-size: 6em;
-  margin-right: 35%;
+  margin-right: 25%;
   margin-left: 2%;
   margin-top: 1%;
+  margin-bottom: 3%;
   float: left;
-  color: #102542;
   border-radius: 5px;
+  color: black;
 }
 
 .navbar ul {
   font-family: "Lato", Helvetica, sans-serif;
   float: left;
   list-style: none;
-  color: #102542;
-  margin-top: 20px;
 }
 
 .navbar li {
-  display: inline-block;
-  font-size: 1.4em;
+  float: left;
+  font-size: 1em;
   padding-right: 20px;
 }
 
 .navbar a:link, a:visited {
-  color: #102542;
+  color: black;
 }
 
 .navbar a:hover {
@@ -53,57 +50,106 @@ body {
 }
 
 .navbar a:active {
-  color: #026D94;
   text-decoration: none;
 }
 
-.profilepic p {
-  font-family: "Lato", Helvetica, sans-serif;
-  color: #102542;
-  padding: 5px;
+@font-face {
+	font-family: 'Komika Axis';
+	src: url('fonts/KomikaAxis.eot');
+	src: url('fonts/KomikaAxis.eot?#iefix') format('embedded-opentype'),
+		url('fonts/KomikaAxis.woff') format('woff'),
+		url('fonts/KomikaAxis.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
-.parallax {
-  background-image: url("images/storm.jpg");
-  height: 600px;
+#projectHead {
+  color: black;
+  font-family: "Abel", Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.projectImg {
+  margin: 3% 0;
+  height: 40%;
   background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.quote {
-  padding: 50px;
-  margin: 9% 17%;
-  box-shadow: 0 0 50px 0 black;
-  opacity: 0.9;
+.projectImg img {
+  display: block;
+  float: left;
+  height: 200px;
+  width: 400px;
+  margin: 0 10%;
 }
 
-.quote p {
-  font-family: "Cookie", Helvetica, sans-serif;
-  font-size: 4.2em;
-  text-align: center;
-  color: #E9D460;
+.card {
+  float: left;
+  width: 33.333%;
+  margin-bottom: 2rem;
+  border: 0;
+  height: 390px;
+  width: 475px;
 }
 
-#quoteAuthor {
-  font-family: "Raleway", Helvetica, sans-serif;
-  font-size: 1.4em;
+.card > a > img {
+  margin-bottom: .75rem;
+  height: 80%;
+  width: 100%;
+  box-shadow: 4px 5px 70px 0px rgba(28,28,28,1);
+}
+
+.card-text {
+  font-size: 1.1em;
+  font-family: "Abel", Helvetica, sans-serif;
+  color: lightgrey;
+}
+
+#blackjackDiv {
   float: right;
-  margin-top: 3%;
-  color: #E9D460;
+}
+
+#movieDiv {
+  float: right;
+}
+
+.buffer {
+  margin-top: 2%;
+}
+
+.centered {
+  text-align: center;
+}
+
+.profilePic {
+  float: left;
+  margin-right: 20px;
+}
+
+.about {
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 4px 5px 70px 0px rgba(28,28,28,1);
+  background-color: #F45D01;
+}
+
+.about > #aboutHead {
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .about p {
-  font-family: "Lato", Helvetica, sans-serif;
-  color: #102542;
-  margin-top: 1%;
+  color: black;
+  font-family: "Abel", Helvetica, sans-serif;
+  font-size: 1.4em;
+  margin-bottom: 20px;
 }
 
-.about img {
-  float: left;
-  margin-right: 2%;
-}
-
-.darkBlueText {
-  color: #102542;
+footer {
+  background-color: white;
+  margin-top: 3%;
+  font-style: italic;
+  font-size: .7em;
 }
