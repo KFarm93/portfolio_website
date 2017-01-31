@@ -1,0 +1,179 @@
+
+body {
+  background-color: #2D7DD2;
+  color: black;
+}
+
+.navButtons {
+  float: right;
+  display: flex;
+  margin-top: 5%;
+}
+
+.headerBar {
+  background-color: #2D7DD2;
+  height: 20%;
+  /*box-shadow: 4px 5px 70px 0px rgba(28,28,28,1);*/
+}
+
+.headerBar h1 {
+  font-family: "Komika Axis", Helvetica, sans-serif;
+  font-size: 6em;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+  color: black;
+}
+
+.navBar {
+  background-color: #F45D01;
+  margin-bottom: 50px;
+  height: 20%;
+  border: 1px solid black;
+}
+
+.navBar ul {
+  font-family: "Lato", Helvetica, sans-serif;
+  float: right;
+  list-style: none;
+}
+
+.navBar li {
+  float: left;
+  font-size: 1em;
+  padding-right: 20px;
+}
+
+.navBar .homeAndAbout {
+  font-size: 3em;
+  font-family: "Abel", Helvetica, sans-serif;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.navBar ul a:link, a:visited {
+  color: black;
+}
+
+.navBar ul a:hover {
+  text-decoration: none;
+  padding: 1px;
+}
+
+.navBar ul a:active {
+  text-decoration: none;
+}
+
+@font-face {
+	font-family: 'Komika Axis';
+	src: url('fonts/KomikaAxis.eot');
+	src: url('fonts/KomikaAxis.eot?#iefix') format('embedded-opentype'),
+		url('fonts/KomikaAxis.woff') format('woff'),
+		url('fonts/KomikaAxis.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#projectHead {
+  color: black;
+  font-family: "Abel", Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.projectImg {
+  margin: 3% 0;
+  height: 40%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projectImg img {
+  display: block;
+  float: left;
+  height: 200px;
+  width: 400px;
+  margin: 0 10%;
+}
+
+.card {
+  float: left;
+  width: 33.333%;
+  margin-bottom: 2rem;
+  border: 0;
+  height: 390px;
+  width: 475px;
+}
+
+.card > a > img {
+  margin-bottom: .75rem;
+  height: 80%;
+  width: 100%;
+  box-shadow: 4px 5px 70px 0px rgba(28,28,28,1);
+}
+
+.card-text {
+  font-size: 1.1em;
+  font-family: "Abel", Helvetica, sans-serif;
+  color: lightgrey;
+}
+
+/*#blackjackDiv {
+  float: right;
+}
+
+#movieDiv {
+  float: right;
+}*/
+
+.buffer {
+  margin-top: 2%;
+}
+
+.centered {
+  text-align: center;
+}
+
+.profilePic {
+  float: left;
+  margin-right: 20px;
+  border: 1px solid black;
+}
+
+.about {
+  /*border: 1px solid black;*/
+  padding: 10px;
+  /*box-shadow: 4px 5px 70px 0px rgba(28,28,28,1);*/
+  background-color: #2D7DD2;
+}
+
+.about > #aboutHead {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.about p {
+  color: black;
+  font-family: "Abel", Helvetica, sans-serif;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  margin-left: 2%;
+}
+
+.technologies {
+  background-color: #F45D01;
+  margin-left: 2%;
+  font-family: "Abel", Helvetica, sans-serif;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1.4em;
+}
+
+
+footer {
+  background-color: white;
+  margin-top: 3%;
+  font-style: italic;
+  font-size: .7em;
+}
