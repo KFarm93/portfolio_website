@@ -1,11 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "dependencies": {
-    "angular": "^1.6.1",
-    "angular-ui-router": "^0.4.2"
+  "description": ""
   },
   "devDependencies": {},
   "scripts": {
