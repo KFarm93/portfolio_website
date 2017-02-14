@@ -1,4 +1,3 @@
-
 body {
   background-color: #2D7DD2;
   color: black;
@@ -11,24 +10,22 @@ body {
 }
 
 .headerBar {
-  background-color: #2D7DD2;
-  height: 20%;
-  /*box-shadow: 4px 5px 70px 0px rgba(28,28,28,1);*/
+  background-color: white;
+  height: 10%;
 }
 
 .headerBar h1 {
   font-family: "Komika Axis", Helvetica, sans-serif;
-  font-size: 6em;
+  font-size: 3em;
   text-align: center;
-  margin-top: 1%;
-  margin-bottom: 3%;
-  border-radius: 5px;
+  margin-bottom: 2%;
   color: black;
+  /*padding: 10px 20px;*/
 }
 
 .navBar {
   background-color: #F45D01;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   height: 20%;
   border: 1px solid black;
 }
@@ -50,6 +47,9 @@ body {
   font-family: "Abel", Helvetica, sans-serif;
   margin-left: 2%;
   margin-right: 2%;
+  color: black;
+  padding: 4px 50px;
+  border-right: 1px solid black;
 }
 
 .navBar ul a:link, a:visited {
@@ -65,45 +65,11 @@ body {
   text-decoration: none;
 }
 
-@font-face {
-	font-family: 'Komika Axis';
-	src: url('fonts/KomikaAxis.eot');
-	src: url('fonts/KomikaAxis.eot?#iefix') format('embedded-opentype'),
-		url('fonts/KomikaAxis.woff') format('woff'),
-		url('fonts/KomikaAxis.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-#projectHead {
-  color: black;
-  font-family: "Abel", Helvetica, sans-serif;
-  font-weight: 700;
-}
-
-.projectImg {
-  margin: 3% 0;
-  height: 40%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.projectImg img {
-  display: block;
-  float: left;
-  height: 200px;
-  width: 400px;
-  margin: 0 10%;
-}
-
 .card {
-  float: left;
-  width: 33.333%;
   margin-bottom: 2rem;
   border: 0;
-  height: 390px;
-  width: 475px;
+  height: 300px;
+  width: 450px;
 }
 
 .card > a > img {
@@ -113,22 +79,55 @@ body {
   box-shadow: 4px 5px 70px 0px rgba(28,28,28,1);
 }
 
+.card p {
+  display: none;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Abel", Helvetica, sans-serif;
+}
+
+.card h1 {
+  font-family: "Abel", Helvetica, sans-serif;
+}
+
+@font-face {
+        font-family: 'Komika Axis';
+        src: url('fonts/KomikaAxis.eot');
+        src: url('fonts/KomikaAxis.eot?#iefix') format('embedded-opentype'),
+                url('fonts/KomikaAxis.woff') format('woff'),
+                url('fonts/KomikaAxis.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+#projectHead {
+  color: black;
+  font-family: "Abel", Helvetica, sans-serif;
+  font-weight: 700;
+}
+
 .card-text {
   font-size: 1.1em;
   font-family: "Abel", Helvetica, sans-serif;
   color: lightgrey;
 }
 
-/*#blackjackDiv {
+#left {
+  float: left;
+}
+
+#left2 {
+  float: left;
+}
+
+#right {
   float: right;
 }
 
-#movieDiv {
+#right2 {
   float: right;
-}*/
-
-.buffer {
-  margin-top: 2%;
 }
 
 .centered {
@@ -137,20 +136,26 @@ body {
 
 .profilePic {
   float: left;
+  margin-left: 2%;
   margin-right: 20px;
+  margin-top: 2%;
   border: 1px solid black;
+  height: 218px;
+  width: 218px;
 }
 
 .about {
-  /*border: 1px solid black;*/
-  padding: 10px;
+  border: 1px solid black;
+  /*padding: 10px;*/
   /*box-shadow: 4px 5px 70px 0px rgba(28,28,28,1);*/
-  background-color: #2D7DD2;
+  background-color: white;
+  height: 475px;
 }
 
 .about > #aboutHead {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 700;
+  /*margin-top: 2%;*/
 }
 
 .about p {
@@ -163,11 +168,31 @@ body {
 
 .technologies {
   background-color: #F45D01;
-  margin-left: 2%;
+  /*margin-top: 2%;*/
+  /*margin-left: 2%;*/
   font-family: "Abel", Helvetica, sans-serif;
   border: 1px solid black;
-  padding: 10px;
+  height: 475px;
   font-size: 1.4em;
+}
+
+.technologies > #techHead {
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.technologies p {
+  font-size: 1.2em;
+}
+
+.technologies li {
+  display: block;
+}
+
+.technologies li:before {
+  content: "\e254";
+  font-family: 'Glyphicons Halflings';
+  margin-right: 15px;
 }
 
 

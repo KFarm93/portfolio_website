@@ -3,60 +3,112 @@
   <head>
     <meta charset="utf-8">
     <title>Kevin Farmer's Portfolio</title>
+    <script src="jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Prompt|Lato|Raleway|Abel" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+    $(document).ready(function () {
+      $("#madmousePic").hover(function() {
+        $("#left p").removeClass("fadeOutUp");
+        $("#left p").addClass("fadeInDown");
+        $("#left p").css("display", "block");
+        $("#left").css("margin-bottom", "70px");
+        $("#right").css("margin-bottom", "70px");
+      }, function() {
+        $("#left p").removeClass("fadeInDown");
+        $("#left p").addClass("fadeOutUp");
+        $("#left p").css("display", "none");
+        $("#left").css("margin-bottom", "0");
+        $("#right").css("margin-bottom", "0");
+      });
+
+      $("#blackjackPic").hover(function() {
+        $("#right p").removeClass("fadeOutUp");
+        $("#right p").addClass("fadeInDown");
+        $("#right p").css("display", "block");
+        $("#right").css("margin-bottom", "70px");
+        $("#left").css("margin-bottom", "70px");
+      }, function() {
+        $("#right p").removeClass("fadeInDown");
+        $("#right p").addClass("fadeOutUp");
+        $("#right p").css("display", "none");
+        $("#right").css("margin-bottom", "0");
+        $("#left").css("margin-bottom", "0");
+      });
+
+      $("#drawPic").hover(function() {
+        $("#left2 p").removeClass("fadeOutUp");
+        $("#left2 p").addClass("fadeInDown");
+        $("#left2 p").css("display", "block")
+      }, function() {
+        $("#left2 p").removeClass("fadeInDown");
+        $("#left2 p").addClass("fadeOutUp");
+        $("#left2 img").css("margin-top", "0");
+        $("#left2 p").css("display", "none")
+      });
+
+      $("#moviesPic").hover(function() {
+        $("#right2 p").removeClass("fadeOutUp");
+        $("#right2 p").addClass("fadeInDown");
+        $("#right2 p").css("display", "block");
+      }, function() {
+        $("#right2 p").removeClass("fadeInDown");
+        $("#right2 p").addClass("fadeOutUp");
+        $("#right2").css("margin-bottom", "0");
+        $("#right2 p").css("display", "none");
+      });
+    });
+    </script>
   </head>
   <body>
 
-        <div class="col-lg-12 headerBar">
-          <h1>Kevin Farmer</h1>
+    <div class="col-lg-12 headerBar">
+      <h1>Kevin Farmer</h1>
+    </div>
+
+    <div class="col-lg-12 navBar">
+      <a class="homeAndAbout" href="index.html" ui-sref-active="active">Projects</a>
+      <a class="homeAndAbout" href="about.html">About</a>
+      <ul>
+        <li><a href="https://github.com/KFarm93" target="_blank"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/kevin-farmer-b178033b?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a></li>
+        <li><a href="mailto:farmekp0@sewanee.edu"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card buffer" id="left">
+          <h1>madmouse.io</h1>
+          <a href="http://madmouse.io"><img id="madmousePic" src="images/madmouse.png" alt="Image not found"></a>
+          <p class="card-text animated">A browser-based multiplayer video game I built with JavaScript, AngularJS 1, socket.IO, and more!</p>
         </div>
-
-        <div class="col-lg-12 navBar">
-          <a class="homeAndAbout" href="index.html" ui-sref-active="active">Projects</a>
-          <a class="homeAndAbout" href="about.html">About</a>
-        <ul>
-          <li><a href="https://github.com/KFarm93"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/kevin-farmer-b178033b?trk=hp-identity-name"><i class="fa fa-linkedin fa-3x"></i></a></li>
-          <li><a href="mailto:farmekp0@sewanee.edu"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a></li>
-        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card buffer test" id="right">
+          <h1>Blackjack</h1>
+          <a href="http://time_for_blackjack.surge.sh"><img id="blackjackPic" src="images/blackjack.png" alt="Image not found"></a>
+          <p class="card-text animated">A blackjack video game I built with a friend in JavaScript using JQuery!</p>
         </div>
-
-        <div class="container">
-            <h1 id="projectHead">My Projects</h1>
-            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
-              <div class="card buffer">
-                <a href="http://madmouse.io"><img src="images/madmouse.png" alt="Image not found"></a>
-                <p class="card-text">A browser-based multiplayer video game I built in which players guide a single mouse through a maze to get to the cheese! It's built with JavaScript, AngularJS 1, socket.IO, and more!</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
-              <div class="card buffer" id="blackjackDiv">
-                <a href="http://time_for_blackjack.surge.sh"><img src="images/blackjack.png" alt="Image not found"></a>
-                <p class="card-text">A blackjack video game I built with a friend in JavaScript using JQuery!</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
-              <div class="card">
-                <a href="https://drawtogether-nkyossocdc.now.sh/"><img src="images/draw.png" alt="Image not found"></a>
-                <p class="card-text">A multi-user drawing app using Socket.IO!</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
-              <div class="card" id="movieDiv">
-                <a href="http://kevs-movie-db.surge.sh"><img src="images/movies.png"  alt="Image not found"></a>
-                <p class="card-text">A movie database built using themoviedb.org's API!</p>
-              </div>
-            </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card left" id="left2">
+          <h1>Draw Together</h1>
+          <p class="card-text animated">A multi-user drawing app using Socket.IO!</p>
+          <a href="https://drawtogether-nkyossocdc.now.sh/"><img id="drawPic" src="images/draw.png" alt="Image not found"></a>
         </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card right" id="right2">
+          <h1>Kev's Movie DB</h1>
+          <p class="card-text animated">A movie database built using themoviedb.org's API!</p>
+          <a href="http://kevs-movie-db.surge.sh"><img id="moviesPic" src="images/movies.png"  alt="Image not found"></a>
+        </div>
+      </div>
+    </div>
 
-
-        <footer class="text-muted">
-          <div class="container">
-            <p class="centered">Kevin Farmer | Copyright © 2017</p>
-          </div>
-        </footer>
   </body>
 </html>
